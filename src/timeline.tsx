@@ -1,13 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import moment from "moment";
-import type { DataSetDataGroup, DataSetDataItem, TimelineOptions, DataGroup, DataItem } from "vis-timeline";
+import type { DataSetDataGroup, DataSetDataItem, TimelineOptions, DataGroup } from "vis-timeline";
 import { Timeline } from "vis-timeline";
 import { DataSet } from "vis-data";
 import Handlebars from "handlebars";
 import timelineTemplate from "./timeline.template.html?raw";
 import "./timeline.css"
-
-const startDay = moment("2013-04-01");
 
 const idGenerator = (() => {
   let id = 0;
