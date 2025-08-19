@@ -90,6 +90,7 @@ const VisTimeline: React.FC = () => {
             group: gid,
             content: `
               <div>
+                <img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>
                 <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)">上智大学</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>理工学部 情報理工学科
               </div>
@@ -113,6 +114,7 @@ const VisTimeline: React.FC = () => {
             group: g_sub_work.id,
             content: `
               <div>
+                <img src="https://i.gyazo.com/e8d7f0091feca5c11d2500c35688a46a.jpg" alt="Image from Gyazo"/>
                 <a href="https://scrapbox.io/pollenJP-Portfolio/株式会社カブク_kabuku">株式会社Kabukuインターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>職種：機械学習エンジニア
               </div>
@@ -132,7 +134,8 @@ const VisTimeline: React.FC = () => {
             group: g_sub_work.id,
             content: `
               <div>
-                ギリア株式会社インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <img src="https://i.gyazo.com/5f1d5871a467ee44084c903906c2386a.png" alt="Image from Gyazo"/>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/ギリア株式会社_|_Ghelia_Inc.">ギリア株式会社インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>職種：機械学習エンジニア
               </div>
             `,
@@ -151,13 +154,13 @@ const VisTimeline: React.FC = () => {
             group: g_organization.id,
             content: `
               <div>
-                休学・休職 / 復学 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <a href="https://scrapbox.io/pjp/父親の癌宣告とその後の記録">休学・休職 / 復学</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>身内の病気の都合で実家に帰省
               </div>
             `,
             start: startMoment.toDate(),
             end: endMoment.toDate(),
-            type: "range",
+            type: "point",
           }
         }
       )(),
@@ -170,6 +173,7 @@ const VisTimeline: React.FC = () => {
             group: g_organization.id,
             content: `
               <div>
+                <img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>
                 <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)">上智大学大学院</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>理工学専攻 情報学領域 山中研究室
               </div>
@@ -189,6 +193,7 @@ const VisTimeline: React.FC = () => {
             group: g_sub_work.id,
             content: `
               <div>
+                <img src="https://i.gyazo.com/49edd6816e05222cc3951f1ab92c5481.png" alt="Image from Gyazo"/>
                 <a href="https://scrapbox.io/pollenJP-Portfolio/KLab_Server_Side_Camp_%231">KLab株式会社短期インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>コース：Server Side Camp #1
               </div>
@@ -196,6 +201,9 @@ const VisTimeline: React.FC = () => {
             start: startMoment.toDate(),
             end: endMoment.toDate(),
             type: "box",
+            options: {
+              align: "right",
+            },
           }
         }
       )(),
@@ -208,6 +216,7 @@ const VisTimeline: React.FC = () => {
             group: g_sub_work.id,
             content: `
               <div>
+                <img src="https://i.gyazo.com/49edd6816e05222cc3951f1ab92c5481.png" alt="Image from Gyazo"/>
                 <a href="https://scrapbox.io/pollenJP-Portfolio/KLab_Expert_Camp_%235">KLab株式会社短期インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>コース：Expert Camp #5 (発展コース mikanos-net の再現実装)
               </div>
@@ -227,14 +236,33 @@ const VisTimeline: React.FC = () => {
             group: g_organization.id,
             content: `
               <div>
-                <a href="https://scrapbox.io/pollenJP-Portfolio/KLab株式会社">KLab株式会社 所属</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
-                <br>職種：SRE
+                <img src="https://i.gyazo.com/49edd6816e05222cc3951f1ab92c5481.png" alt="Image from Gyazo"/>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/KLab株式会社">KLab株式会社 所属 SRE</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>内容：サービス運用・開発インフラ整備・ログ監視ツール作成
               </div>
             `,
             start: startMoment.toDate(),
             end: endMoment.toDate(),
             type: "background",
+          }
+        }
+      )(),
+      (
+        () => {
+          const startMoment = moment("2024-02-01");
+          const endMoment = moment("2024-09-30");
+          return {
+            id: idGenerator(),
+            group: g_organization.id,
+            content: `
+              <div>
+                <a href="https://scrapbox.io/pjp/父親の癌宣告とその後の記録">壮絶な介護期</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>フルリモートで働きながら介護
+              </div>
+            `,
+            start: startMoment.toDate(),
+            end: endMoment.toDate(),
+            type: "point",
           }
         }
       )(),
@@ -245,6 +273,7 @@ const VisTimeline: React.FC = () => {
     const endMoment = moment();
     const startMoment = endMoment.clone().subtract(5, "year");
     return {
+      align: "left",
       start: startMoment.toDate(),
       end: endMoment.toDate(),
       horizontalScroll: true,
