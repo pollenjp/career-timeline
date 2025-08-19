@@ -3,8 +3,6 @@ import moment from "moment";
 import type { DataSetDataGroup, DataSetDataItem, TimelineOptions, DataGroup } from "vis-timeline";
 import { Timeline } from "vis-timeline";
 import { DataSet } from "vis-data";
-import Handlebars from "handlebars";
-import timelineTemplate from "./timeline.template.html?raw";
 import "./timeline.css"
 
 const idGenerator = (() => {
@@ -59,10 +57,12 @@ const VisTimeline: React.FC = () => {
             {
               id: idGenerator(),
               group: gid,
-              content: `高等学校 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})`,
-              customLines: [
-                `地方の普通科`
-              ],
+              content: `
+                <div>
+                高等学校 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>地方の普通科進学校
+                </div>
+              `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "range",
@@ -88,10 +88,12 @@ const VisTimeline: React.FC = () => {
           {
             id: idGenerator(),
             group: gid,
-            content: `大学 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})`,
-            customLines: [
-              `上智大学 理工学部 情報理工学科 入学`,
-            ],
+            content: `
+              <div>
+                大学 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>上智大学 理工学部 情報理工学科 入学
+              </div>
+            `,
             start: startMoment.toDate(),
             end: endMoment.toDate(),
             type: "range",
@@ -109,12 +111,14 @@ const VisTimeline: React.FC = () => {
           return {
             id: idGenerator(),
             group: g_sub_work.id,
-            content: `インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})`,
-            customLines: [
-              `会社：株式会社カブク`,
-              `職種：機械学習エンジニア`,
-              `内容：異常検知`,
-            ],
+            content: `
+              <div>
+                インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>会社：ギリア株式会社
+                <br>職種：機械学習エンジニア
+                <br>内容：コンピュータビジョンを用いた画像処理・異常検知
+              </div>
+            `,
             start: startMoment.toDate(),
             end: endMoment.toDate(),
             type: "range",
@@ -128,12 +132,14 @@ const VisTimeline: React.FC = () => {
           return {
             id: idGenerator(),
             group: g_sub_work.id,
-            content: `インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})`,
-            customLines: [
-              `会社：ギリア株式会社`,
-              `職種：機械学習エンジニア`,
-              `内容：コンピュータビジョンを用いた画像処理・異常検知`,
-            ],
+            content: `
+              <div>
+                インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>会社：ギリア株式会社
+                <br>職種：機械学習エンジニア
+                <br>内容：コンピュータビジョンを用いた画像処理・異常検知
+              </div>
+            `,
             start: startMoment.toDate(),
             end: endMoment.toDate(),
             type: "range",
@@ -147,11 +153,13 @@ const VisTimeline: React.FC = () => {
           return {
             id: idGenerator(),
             group: g_organization.id,
-            content: `休学 / 復学 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})`,
-            customLines: [
-              `身内の病気の都合で実家に帰省`,
-              `インターンも休職`,
-            ],
+            content: `
+              <div>
+                休学 / 復学 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>身内の病気の都合で実家に帰省
+                <br>インターンも休職
+              </div>
+            `,
             start: startMoment.toDate(),
             end: endMoment.toDate(),
             type: "range",
@@ -165,11 +173,13 @@ const VisTimeline: React.FC = () => {
           return {
             id: idGenerator(),
             group: g_organization.id,
-            content: `大学院 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})`,
-            customLines: [
-              `上智大学大学院 理工学専攻`,
-              `情報学領域 山中研究室`,
-            ],
+            content: `
+              <div>
+                大学院 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>上智大学大学院 理工学専攻
+                <br>情報学領域 山中研究室
+              </div>
+            `,
             start: startMoment.toDate(),
             end: endMoment.toDate(),
             type: "background",
@@ -183,12 +193,14 @@ const VisTimeline: React.FC = () => {
           return {
             id: idGenerator(),
             group: g_sub_work.id,
-            content: `短期インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})`,
-            customLines: [
-              `会社：KLab株式会社`,
-              `コース：Server Side Camp #1`,
-              `内容：Pythonによるゲーム用APIサーバー開発`,
-            ],
+            content: `
+              <div>
+                短期インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>会社：KLab株式会社
+                <br>コース：Server Side Camp #1
+                <br>内容：Pythonによるゲーム用APIサーバー開発
+              </div>
+            `,
             start: startMoment.toDate(),
             end: endMoment.toDate(),
             type: "box",
@@ -202,14 +214,16 @@ const VisTimeline: React.FC = () => {
           return {
             id: idGenerator(),
             group: g_sub_work.id,
-            content: `短期インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})`,
-            customLines: [
-              `会社：KLab株式会社`,
-              `コース：Expert Camp #5`,
-              `(第5回テーマ:TCP/IPプロトコルスタック自作開発 #3)`,
-              `内容：発展コース mikanos-net の再現実装`,
-              `(自作OS上で自作TCP/IPプロトコルスタックを動かす)`,
-            ],
+            content: `
+              <div>
+                短期インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>会社：KLab株式会社
+                <br>コース：Expert Camp #5
+                <br>(第5回テーマ:TCP/IPプロトコルスタック自作開発 #3)
+                <br>内容：発展コース mikanos-net の再現実装
+                <br>(自作OS上で自作TCP/IPプロトコルスタックを動かす)
+              </div>
+            `,
             start: startMoment.toDate(),
             end: endMoment.toDate(),
             type: "box",
@@ -223,11 +237,13 @@ const VisTimeline: React.FC = () => {
           return {
             id: idGenerator(),
             group: g_organization.id,
-            content: `KLab株式会社 所属 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})`,
-            customLines: [
-              `職種：SRE`,
-              `内容：サービス運用・開発インフラ整備・ログ監視ツール作成`,
-            ],
+            content: `
+              <div>
+                KLab株式会社 所属 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>職種：SRE
+                <br>内容：サービス運用・開発インフラ整備・ログ監視ツール作成
+              </div>
+            `,
             start: startMoment.toDate(),
             end: endMoment.toDate(),
             type: "background",
@@ -247,7 +263,6 @@ const VisTimeline: React.FC = () => {
       horizontalScrollKey: "shiftKey",
       zoomKey: "ctrlKey",
       orientation: "both",
-      template: Handlebars.compile(timelineTemplate),
     };
   })();
 
