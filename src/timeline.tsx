@@ -90,8 +90,8 @@ const VisTimeline: React.FC = () => {
             group: gid,
             content: `
               <div>
-                大学 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
-                <br>上智大学 理工学部 情報理工学科 入学
+                <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)">上智大学</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>理工学部 情報理工学科
               </div>
             `,
             start: startMoment.toDate(),
@@ -113,10 +113,8 @@ const VisTimeline: React.FC = () => {
             group: g_sub_work.id,
             content: `
               <div>
-                インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
-                <br>会社：ギリア株式会社
+                <a href="https://scrapbox.io/pollenJP-Portfolio/株式会社カブク_kabuku">株式会社Kabukuインターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>職種：機械学習エンジニア
-                <br>内容：コンピュータビジョンを用いた画像処理・異常検知
               </div>
             `,
             start: startMoment.toDate(),
@@ -134,10 +132,8 @@ const VisTimeline: React.FC = () => {
             group: g_sub_work.id,
             content: `
               <div>
-                インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
-                <br>会社：ギリア株式会社
+                ギリア株式会社インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>職種：機械学習エンジニア
-                <br>内容：コンピュータビジョンを用いた画像処理・異常検知
               </div>
             `,
             start: startMoment.toDate(),
@@ -155,9 +151,8 @@ const VisTimeline: React.FC = () => {
             group: g_organization.id,
             content: `
               <div>
-                休学 / 復学 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                休学・休職 / 復学 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>身内の病気の都合で実家に帰省
-                <br>インターンも休職
               </div>
             `,
             start: startMoment.toDate(),
@@ -175,9 +170,8 @@ const VisTimeline: React.FC = () => {
             group: g_organization.id,
             content: `
               <div>
-                大学院 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
-                <br>上智大学大学院 理工学専攻
-                <br>情報学領域 山中研究室
+                <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)">上智大学大学院</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>理工学専攻 情報学領域 山中研究室
               </div>
             `,
             start: startMoment.toDate(),
@@ -195,10 +189,8 @@ const VisTimeline: React.FC = () => {
             group: g_sub_work.id,
             content: `
               <div>
-                短期インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
-                <br>会社：KLab株式会社
+                <a href="https://scrapbox.io/pollenJP-Portfolio/KLab_Server_Side_Camp_%231">KLab株式会社短期インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>コース：Server Side Camp #1
-                <br>内容：Pythonによるゲーム用APIサーバー開発
               </div>
             `,
             start: startMoment.toDate(),
@@ -216,12 +208,8 @@ const VisTimeline: React.FC = () => {
             group: g_sub_work.id,
             content: `
               <div>
-                短期インターン (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
-                <br>会社：KLab株式会社
-                <br>コース：Expert Camp #5
-                <br>(第5回テーマ:TCP/IPプロトコルスタック自作開発 #3)
-                <br>内容：発展コース mikanos-net の再現実装
-                <br>(自作OS上で自作TCP/IPプロトコルスタックを動かす)
+                <a href="https://scrapbox.io/pollenJP-Portfolio/KLab_Expert_Camp_%235">KLab株式会社短期インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <br>コース：Expert Camp #5 (発展コース mikanos-net の再現実装)
               </div>
             `,
             start: startMoment.toDate(),
@@ -239,7 +227,7 @@ const VisTimeline: React.FC = () => {
             group: g_organization.id,
             content: `
               <div>
-                KLab株式会社 所属 (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                <a href="https://scrapbox.io/pollenJP-Portfolio/KLab株式会社">KLab株式会社 所属</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                 <br>職種：SRE
                 <br>内容：サービス運用・開発インフラ整備・ログ監視ツール作成
               </div>
