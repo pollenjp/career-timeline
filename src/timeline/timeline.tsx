@@ -98,6 +98,25 @@ const VisTimeline: React.FC = () => {
           () => {
             const gid = g_organization.id;
             const startMoment = moment("2016-04-01");
+            return [
+            {
+              id: idGenerator(),
+              group: gid,
+              content: `
+                受験失敗
+              `,
+              start: startMoment.toDate(),
+              type: "point",
+            }
+          ]
+          }
+        )(),
+    );
+    items.add(
+        (
+          () => {
+            const gid = g_organization.id;
+            const startMoment = moment("2016-04-01");
             const endMoment = moment("2021-03-30");
             return [{
               id: idGenerator(),
@@ -223,7 +242,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
-              type: "point",
+              type: "range",
             }]
           }
         )(),
@@ -399,7 +418,7 @@ const VisTimeline: React.FC = () => {
                 `,
                 start: startMoment.toDate(),
                 end: endMoment.toDate(),
-                type: "point",
+                type: "range",
               },
             ]
           }
@@ -617,6 +636,102 @@ const VisTimeline: React.FC = () => {
     items.add(
       (
         () => {
+          const startMoment = moment("2016-06-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                大学の授業で人生で初めてのプログラミング言語に触れる (Excel VBA)
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2016-09-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                大学の授業でC言語に出会う
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=c" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2016-10-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/8aad6ea883abff1fe7a3ea2c2070dbc4.png" alt="Image from Gyazo"/>
+                <a href="https://www.amazon.co.jp/dp/4339024880">『コンピュータ設計概論: CMOSから組み込みCPUまで』</a>
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2016-12-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/d07f5ac25c5828725f16315c6ac382f1.png" alt="Image from Gyazo"/>
+                <a href="https://booklog.jp/item/1/4822298426">『コンピュータの構成と設計』第5版 上 (パタヘネ)</a>
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2017-01-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/2ffdda5f8eb8bad2ebc291d989ca8ea3.png" alt="Image from Gyazo"/>
+                <a href="https://booklog.jp/item/1/4822298434">『コンピュータの構成と設計』第5版 下 (パタヘネ)</a>
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
           const startMoment = moment("2016-12-01");
           const endMoment = moment("2017-03-31");
           return [
@@ -704,6 +819,25 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2017-07-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_data_science.id,
+              content: `
+                <img src="https://i.gyazo.com/586ffd0645d9e387f1da52f15ef5c5f3.png" alt="Image from Gyazo" />
+                <a href="https://booklog.jp/item/1/4061529021">『深層学習 (機械学習プロフェッショナルシリーズ)』</a>
+              `,
+              start: startMoment.toDate(),
               type: "box",
             }
           ]
@@ -909,8 +1043,8 @@ const VisTimeline: React.FC = () => {
    */
 
   const options: TimelineOptions = (() => {
-    const endMoment = moment().add(1, "year");
-    const startMoment = endMoment.clone().subtract(5, "year");
+    const endMoment = moment().add(2, "year");
+    const startMoment = endMoment.clone().subtract(12, "year");
     return {
       align: "left",
       start: startMoment.toDate(),
