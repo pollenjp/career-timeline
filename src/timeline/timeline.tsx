@@ -126,6 +126,30 @@ const VisTimeline: React.FC = () => {
         )(),
     );
     items.add(
+        (
+          () => {
+            const gid = g_organization.id;
+            const startMoment = moment("2017-08-01");
+            const endMoment = moment("2023-03-31");
+            return [
+              {
+                id: idGenerator(),
+                group: gid,
+                content: `
+                  <div>
+                    <img src="https://i.gyazo.com/4ef3f51230d8fcb3c3251e7e570b1175.png" alt="Image from Gyazo"/>
+                    <a href="https://utvirtual.tech/">UT-virtual 所属 (1期生)</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                  </div>
+                `,
+                start: startMoment.toDate(),
+                end: endMoment.toDate(),
+                type: "range",
+              }
+            ]
+          }
+        )(),
+    );
+    items.add(
       [
         (
           () => {
@@ -238,6 +262,30 @@ const VisTimeline: React.FC = () => {
             ]
           }
         )(),
+      );
+      items.add(
+          (
+            () => {
+              const gid = g_organization.id;
+              const startMoment = moment("2021-10-01");
+              const endMoment = moment();
+              return [
+                {
+                  id: idGenerator(),
+                  group: gid,
+                  content: `
+                    <div>
+                      <img src="https://i.gyazo.com/f253f9b2d9c1bf61982d1557eeebef76.png" alt="Image from Gyazo"/>
+                      <a href="https://www.kmc.gr.jp/">KMC 所属 (45期)</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')} 現在)
+                    </div>
+                  `,
+                  start: startMoment.toDate(),
+                  end: endMoment.toDate(),
+                  type: "range",
+                }
+              ]
+            }
+          )(),
       );
       items.add([
         (
@@ -387,7 +435,7 @@ const VisTimeline: React.FC = () => {
     items.add(
       (
         () => {
-          const startMoment = moment("2023-07-01");
+          const startMoment = moment("2023-02-01");
           return [
             {
               id: idGenerator(),
@@ -520,6 +568,25 @@ const VisTimeline: React.FC = () => {
         }
       )()
     );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2025-08-17");
+          return [
+            {
+              id: idGenerator(),
+              group: g_article.id,
+              content: `
+                <img src="https://i.gyazo.com/f253f9b2d9c1bf61982d1557eeebef76.png" alt="Image from Gyazo"/>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/部誌：独習KMC_vol.22_執筆">部誌：独習KMC vol.22 執筆</a>
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+          ]
+        }
+      )()
+    );
   }
 
   /**
@@ -546,126 +613,272 @@ const VisTimeline: React.FC = () => {
   };
   groups.add(g_learning);
 
-  items.add(
-    (
-      () => {
-        const startMoment = moment("2016-12-01");
-        const endMoment = moment("2017-03-31");
-        return [
-          {
-            id: idGenerator(),
-            group: g_data_science.id,
-            content: `
-              <img src="https://i.gyazo.com/cc020c6733a72b50d507c02cbb4ddf07.png" alt="Image from Gyazo"/>
-              <a href="https://www.oreilly.co.jp/books/9784873117584/">『ゼロから作るDeep Learning』</a>
-              <a href="https://skillicons.dev">
-                <img src="https://skillicons.dev/icons?i=python" />
-              </a>
-            `,
-            start: startMoment.toDate(),
-            end: endMoment.toDate(),
-            type: "box",
-          }
-        ]
-      }
-    )()
-  );
-  items.add(
-    (
-      () => {
-        const startMoment = moment("2017-04-01");
-        const endMoment = moment("2017-06-30");
-        return [
-          {
-            id: idGenerator(),
-            group: g_data_science.id,
-            content: `
-              <img src="https://i.gyazo.com/c94e97129d2bcae0fa7a72eeda8239ed.png" alt="Image from Gyazo"/>
-              <a href="https://book.impress.co.jp/books/1115101122">『Python機械学習プログラミング』 達人データサイエンティストによる理論と実践</a>
-              <a href="https://skillicons.dev">
-                <img src="https://skillicons.dev/icons?i=sklearn,python" />
-              </a>
-            `,
-            start: startMoment.toDate(),
-            end: endMoment.toDate(),
-            type: "box",
-          }
-        ]
-      }
-    )()
-  );
-  items.add(
-    (
-      () => {
-        const startMoment = moment("2018-03-01");
-        const endMoment = moment("2018-05-31");
-        return [
-          {
-            id: idGenerator(),
-            group: g_computer_science.id,
-            content: `
-              <img src="https://i.gyazo.com/8d5f458a9a1cf13492ded2745ed9ac27.png" alt="Image from Gyazo"/>
-              <a href="https://scrapbox.io/pollenJP-Portfolio/『30日でできる！OS自作入門』を_Ubuntu16.04%2FNASM_で実装してみた記事">『30日でできる！OS自作入門』</a>
-              <a href="https://skillicons.dev">
-                <img src="https://skillicons.dev/icons?i=c" />
-              </a>
-            `,
-            start: startMoment.toDate(),
-            end: endMoment.toDate(),
-            type: "box",
-          }
-        ]
-      }
-    )()
-  );
-  items.add(
-    (
-      () => {
-        const startMoment = moment("2022-02-01");
-        const endMoment = moment("2022-03-01");
-        return [
-          {
-            id: idGenerator(),
-            group: g_computer_science.id,
-            content: `
-              <img src="https://i.gyazo.com/674d05e81629e3650bc88e141d00d58b.png" alt="Image from Gyazo"/>
-              <a href="https://book.mynavi.jp/ec/products/detail/id=121220">『ゼロからのOS自作入門』 (みかん本 MikanOS本)</a>
-              <a href="https://skillicons.dev">
-                <img src="https://skillicons.dev/icons?i=c,cpp" />
-              </a>
-            `,
-            start: startMoment.toDate(),
-            end: endMoment.toDate(),
-            type: "box",
-          }
-        ]
-      }
-    )()
-  );
-  items.add(
-    (
-      () => {
-        const startMoment = moment("2023-02-01");
-        const endMoment = moment("2023-03-31");
-        return [
-          {
-            id: idGenerator(),
-            group: g_computer_science.id,
-            content: `
-              <img src="https://i.gyazo.com/d360cfcef09e02dbfc46685eff45deac.png" alt="Image from Gyazo"/>
-              <a href="https://www.shuwasystem.co.jp/book/9784798067315.html">『Webアプリ開発で学ぶ Rust言語入門』</a>
-              <a href="https://skillicons.dev">
-                <img src="https://skillicons.dev/icons?i=rust" />
-              </a>
-            `,
-            start: startMoment.toDate(),
-            end: endMoment.toDate(),
-            type: "box",
-          }
-        ]
-      }
-    )()
-  );
+  {
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2016-12-01");
+          const endMoment = moment("2017-03-31");
+          return [
+            {
+              id: idGenerator(),
+              group: g_data_science.id,
+              content: `
+                <img src="https://i.gyazo.com/cc020c6733a72b50d507c02cbb4ddf07.png" alt="Image from Gyazo"/>
+                <a href="https://www.oreilly.co.jp/books/9784873117584/">『ゼロから作るDeep Learning』</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=python" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2017-02-01");
+          const endMoment = moment("2017-02-28");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/569bc353b659d67427843d0bf01bb6c3.png" alt="Image from Gyazo"/>
+                <a href="https://book.impress.co.jp/books/1119101009">『1週間でLPICの基礎が学べる本 第2版』</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=linux" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2017-03-01");
+          const endMoment = moment("2017-08-31");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/1689dba5e06a5d18e2a43b0be7cf564c.png" alt="Image from Gyazo"/>
+                <a href="https://www.amazon.co.jp/dp/4797380942">『新しいLinuxの教科書』</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=linux" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2017-04-01");
+          const endMoment = moment("2017-06-30");
+          return [
+            {
+              id: idGenerator(),
+              group: g_data_science.id,
+              content: `
+                <img src="https://i.gyazo.com/c94e97129d2bcae0fa7a72eeda8239ed.png" alt="Image from Gyazo"/>
+                <a href="https://book.impress.co.jp/books/1115101122">『Python機械学習プログラミング』 達人データサイエンティストによる理論と実践</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=sklearn,python" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2018-03-01");
+          const endMoment = moment("2018-05-31");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/8d5f458a9a1cf13492ded2745ed9ac27.png" alt="Image from Gyazo"/>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/『30日でできる！OS自作入門』を_Ubuntu16.04%2FNASM_で実装してみた記事">『30日でできる！OS自作入門』</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=c" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2018-09-01");
+          const endMoment = moment("2018-10-31");
+          return [
+            {
+              id: idGenerator(),
+              group: g_data_science.id,
+              content: `
+                <img src="https://i.gyazo.com/fbf7c8fc4c6b912d69af342e922732e2.png" alt="Image from Gyazo"/>
+                <a href="https://book.impress.co.jp/books/1116101172">『TensorFlow機械学習クックブック』Pythonベースの活用レシピ60+</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=tensorflow,sklearn,python" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2021-04-01");
+          const endMoment = moment("2022-01-31");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/bea028e6ad037240df848e1e4cbc7c4e.png" alt="Image from Gyazo"/>
+                <a href="https://book.mynavi.jp/ec/products/detail/id=121220">『つくりながら学ぶ!PyTorchによる発展ディープラーニング』</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=pytorch,python" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2022-02-01");
+          const endMoment = moment("2022-03-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/674d05e81629e3650bc88e141d00d58b.png" alt="Image from Gyazo"/>
+                <a href="https://book.mynavi.jp/ec/products/detail/id=121220">『ゼロからのOS自作入門』 (みかん本 MikanOS本)</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=c,cpp" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2023-02-01");
+          const endMoment = moment("2023-02-28");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/f4153c4d1b8ff71bd3cf7c21bb774198.png" alt="Image from Gyazo"/>
+                <a href="https://book.mynavi.jp/manatee/c-r/books/detail/id=131170">『詳解Go言語Webアプリケーション開発』</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=go" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2023-03-01");
+          const endMoment = moment("2023-03-31");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/d360cfcef09e02dbfc46685eff45deac.png" alt="Image from Gyazo"/>
+                <a href="https://www.shuwasystem.co.jp/book/9784798067315.html">『Webアプリ開発で学ぶ Rust言語入門』</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=rust" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2025-07-01");
+          const endMoment = moment("2025-08-31");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/5fd026987d8fe03c3e93fd60d889897d.png" alt="Image from Gyazo"/>
+                <a href="https://gihyo.jp/dp/ebook/2025/978-4-297-14900-0">『Docker&Kubernetesネットワークのしくみ』</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=kubernetes,docker" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+  }
 
   /**
    * timeline options
