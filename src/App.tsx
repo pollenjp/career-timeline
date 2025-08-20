@@ -1,4 +1,4 @@
-import VisTimeline from './timeline'
+import VisTimeline from './timeline/timeline'
 
 function App() {
   return (
