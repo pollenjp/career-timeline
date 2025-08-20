@@ -132,7 +132,7 @@ const VisTimeline: React.FC = () => {
               content: `
                 <div>
                   <img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>
-                  <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)">上智大学</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                  <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)" target="_blank">上智大学</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                   <br>理工学部 情報理工学科
                 </div>
               `,
@@ -157,7 +157,7 @@ const VisTimeline: React.FC = () => {
                 content: `
                   <div>
                     <img src="https://i.gyazo.com/4ef3f51230d8fcb3c3251e7e570b1175.png" alt="Image from Gyazo"/>
-                    <a href="https://utvirtual.tech/">UT-virtual 所属 (1期生)</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                    <a href="https://utvirtual.tech/" target="_blank">UT-virtual 所属 (1期生)</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                   </div>
                 `,
                 start: startMoment.toDate(),
@@ -180,11 +180,9 @@ const VisTimeline: React.FC = () => {
               content: `
                 <div>
                   <img src="https://i.gyazo.com/e8d7f0091feca5c11d2500c35688a46a.jpg" alt="Image from Gyazo"/>
-                  <a href="https://scrapbox.io/pollenJP-Portfolio/株式会社カブク_kabuku">株式会社Kabukuインターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                  <a href="https://scrapbox.io/pollenJP-Portfolio/株式会社カブク_kabuku" target="_blank">株式会社Kabukuインターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                   <br>機械学習エンジニア
-                    <a href="https://skillicons.dev">
-                      <img src="https://skillicons.dev/icons?i=tensorflow,sklearn,python" />
-                    </a>
+                    <img src="https://skillicons.dev/icons?i=tensorflow,sklearn,python" />
                 </div>
               `,
               start: startMoment.toDate(),
@@ -203,11 +201,9 @@ const VisTimeline: React.FC = () => {
               content: `
                 <div>
                   <img src="https://i.gyazo.com/5f1d5871a467ee44084c903906c2386a.png" alt="Image from Gyazo"/>
-                  <a href="https://scrapbox.io/pollenJP-Portfolio/ギリア株式会社_|_Ghelia_Inc.">ギリア株式会社インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                  <a href="https://scrapbox.io/pollenJP-Portfolio/ギリア株式会社_|_Ghelia_Inc." target="_blank">ギリア株式会社インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                   <br>機械学習エンジニア
-                    <a href="https://skillicons.dev">
-                      <img src="https://skillicons.dev/icons?i=pytorch,docker,sklearn,opencv,python" />
-                    </a>
+                    <img src="https://skillicons.dev/icons?i=pytorch,docker,sklearn,opencv,python" />
                 </div>
               `,
               start: startMoment.toDate(),
@@ -236,7 +232,7 @@ const VisTimeline: React.FC = () => {
               group: g_organization.id,
               content: `
                 <div>
-                  <a href="https://scrapbox.io/pjp/父親の癌宣告とその後の記録">休学・休職 / 復学</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                  <a href="https://scrapbox.io/pjp/父親の癌宣告とその後の記録" target="_blank">休学・休職 / 復学</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                   <br>身内の病気の都合で実家に帰省
                 </div>
               `,
@@ -267,11 +263,9 @@ const VisTimeline: React.FC = () => {
                 content: `
                   <div>
                     <img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>
-                    <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)">上智大学大学院</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                    <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)" target="_blank">上智大学大学院</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                     <br>理工学専攻 情報学領域 山中研究室
-                      <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=pytorch,python,blender,docker" />
-                      </a>
+                      <img src="https://skillicons.dev/icons?i=pytorch,python,blender,docker" />
                   </div>
                 `,
                 start: startMoment.toDate(),
@@ -295,7 +289,7 @@ const VisTimeline: React.FC = () => {
                   content: `
                     <div>
                       <img src="https://i.gyazo.com/f253f9b2d9c1bf61982d1557eeebef76.png" alt="Image from Gyazo"/>
-                      <a href="https://www.kmc.gr.jp/">KMC 所属 (45期)</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')} 現在)
+                      <a href="https://www.kmc.gr.jp/" target="_blank">KMC 所属 (45期)</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')} 現在)
                     </div>
                   `,
                   start: startMoment.toDate(),
@@ -317,11 +311,9 @@ const VisTimeline: React.FC = () => {
               content: `
                 <div>
                   <img src="https://i.gyazo.com/49edd6816e05222cc3951f1ab92c5481.png" alt="Image from Gyazo"/>
-                  <a href="https://scrapbox.io/pollenJP-Portfolio/KLab_Server_Side_Camp_%231">KLab株式会社短期インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                  <a href="https://scrapbox.io/pollenJP-Portfolio/KLab_Server_Side_Camp_%231" target="_blank">KLab株式会社短期インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                   <br>コース：Server Side Camp #1
-                    <a href="https://skillicons.dev">
-                      <img src="https://skillicons.dev/icons?i=fastapi,python" />
-                    </a>
+                    <img src="https://skillicons.dev/icons?i=fastapi,python" />
                 </div>
               `,
               start: startMoment.toDate(),
@@ -343,11 +335,9 @@ const VisTimeline: React.FC = () => {
               content: `
                 <div>
                   <img src="https://i.gyazo.com/49edd6816e05222cc3951f1ab92c5481.png" alt="Image from Gyazo"/>
-                  <a href="https://scrapbox.io/pollenJP-Portfolio/KLab_Expert_Camp_%235">KLab株式会社短期インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                  <a href="https://scrapbox.io/pollenJP-Portfolio/KLab_Expert_Camp_%235" target="_blank">KLab株式会社短期インターン</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                   <br>コース：Expert Camp #5 (発展コース mikanos-net の再現実装)
-                    <a href="https://skillicons.dev">
-                      <img src="https://skillicons.dev/icons?i=c,cpp" />
-                    </a>
+                    <img src="https://skillicons.dev/icons?i=c,cpp" />
                 </div>
               `,
               start: startMoment.toDate(),
@@ -377,12 +367,10 @@ const VisTimeline: React.FC = () => {
                 content: `
                   <div>
                     <img src="https://i.gyazo.com/49edd6816e05222cc3951f1ab92c5481.png" alt="Image from Gyazo"/>
-                    <a href="https://scrapbox.io/pollenJP-Portfolio/KLab株式会社">KLab株式会社 所属 SRE</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                    <a href="https://scrapbox.io/pollenJP-Portfolio/KLab株式会社" target="_blank">KLab株式会社 所属 SRE</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                     <br>内容：サービス運用・開発インフラ整備・ログ監視ツール作成
                     <br>
-                      <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=python,go,typescript,rust,ansible,kubernetes,grafana,docker,jenkins,aws,bash,git" />
-                      </a>
+                      <img src="https://skillicons.dev/icons?i=python,go,typescript,rust,ansible,kubernetes,grafana,docker,jenkins,aws,bash,git" />
                   </div>
                 `,
                 start: startMoment.toDate(),
@@ -412,7 +400,7 @@ const VisTimeline: React.FC = () => {
                 group: g_organization.id,
                 content: `
                   <div>
-                    <a href="https://scrapbox.io/pjp/父親の癌宣告とその後の記録">壮絶な介護期</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
+                    <a href="https://scrapbox.io/pjp/父親の癌宣告とその後の記録" target="_blank">壮絶な介護期</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                     <br>フルリモートで働きながら介護
                   </div>
                 `,
@@ -454,16 +442,172 @@ const VisTimeline: React.FC = () => {
     items.add(
       (
         () => {
+          const startMoment = moment("2017-07-30");
+          return [
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                <img src="https://i.gyazo.com/850e054cffe7f75ee60641ad32d921d5.png" alt="Image from Gyazo"/>
+                WebApp: <a href="https://scrapbox.io/pollenJP-Portfolio/手書き数字認識Webアプリケーション" target="_blank">手書き数字認識App</a>
+                <img src="https://skillicons.dev/icons?i=python" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2017-11-24");
+          return [
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                <img src="https://i.gyazo.com/f2c24d977b963164870de81ede667d38.png" alt="Image from Gyazo"/>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/駒場祭2017_WebAR" target="_blank">駒場祭2017 WebAR</a>
+                <img src="https://skillicons.dev/icons?i=html,css,js,threejs" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2018-07-23");
+          return [
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                <img src="https://i.gyazo.com/850e054cffe7f75ee60641ad32d921d5.png" alt="Image from Gyazo"/>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/傘忘防ボット_LINE_Bot" target="_blank">傘忘防ボット</a>
+                <img src="https://skillicons.dev/icons?i=nodejs,postgres,raspberrypi,heroku" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2018-01-08");
+          return [
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                Game: <a href="https://scrapbox.io/pollenJP-Portfolio/PombperMan" target="_blank">PombperMan</a>
+                <img src="https://skillicons.dev/icons?i=unity" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2019-09-13");
+          return [
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                <img src="https://i.gyazo.com/6f07a58794db7ae6cf2d8edc041d8352.png" alt="Image from Gyazo"/>
+                <br />
+                <a href="https://scrapbox.io/pollenJP-Portfolio/脱走中VR" target="_blank">脱走中VR</a>
+                <img src="https://skillicons.dev/icons?i=unrealengine" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2020-11-25");
+          return [
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                <a href="https://scrapbox.io/pollenJP-Portfolio/CIC_Tokyo_オープンハウス_Shader_2020-11-25" target="_blank">Shader のプロジェクション展示</a>
+                <img src="https://skillicons.dev/icons?i=unrealengine" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2021-07-14");
+          return [
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                <a href="https://scrapbox.io/pollenJP-Portfolio/Djangoを利用したミニブログ_(Django_+_gunicorn_+_Docker_Compose_+_PostgreSQL_+_AWS)" target="_blank">Django Mini Blog</a>
+                <img src="https://skillicons.dev/icons?i=django,python,postgres,aws,docker" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2022-08-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                <a href="https://scrapbox.io/pollenJP-Portfolio/Pomodoro_Bot_(Discord)" target="_blank">Pomodoro Discord Bot</a>
+                <img src="https://skillicons.dev/icons?i=go,discord" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
           const startMoment = moment("2023-02-01");
           return [
             {
               id: idGenerator(),
               group: g_software_development.id,
               content: `
-                WebApp: <a href="https://github.com/pollenjp/times-hub">pollenjp/times-hub</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=rust,react,typescript" />
-                </a>
+                WebApp: <a href="https://github.com/pollenjp/times-hub" target="_blank">pollenjp/times-hub</a>
+                <br />
+                <img src="https://skillicons.dev/icons?i=rust,react,typescript,postgresql" />
               `,
               start: startMoment.toDate(),
               type: "box",
@@ -475,16 +619,15 @@ const VisTimeline: React.FC = () => {
     items.add(
       (
         () => {
-          const startMoment = moment("2024-12-01");
+          const startMoment = moment("2023-09-20");
           return [
             {
               id: idGenerator(),
-              group: g_software_development.id,
+              group: g_article.id,
               content: `
-                OSS貢献: <a href="https://scrapbox.io/pollenJP-Portfolio/astral-sh%2Fsetup-uv_(github.com)">astral-sh/setup-uv</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=typescript,python" />
-                </a>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/vagrant-libvirt_と_Ansible_で自宅鯖prod環境に近い複数ノードKubernetes環境をローカルに作る" target="_blank">vagrant-libvirt と Ansible で自宅鯖prod環境に近い複数ノードKubernetes環境をローカルに作る</a>
+                <img src="https://skillicons.dev/icons?i=kubernetes,ansible" />
+                <img src="https://i.gyazo.com/31fa8aed326ea966d8880cc343a0145d.png" alt="vagrant logo"/>
               `,
               start: startMoment.toDate(),
               type: "box",
@@ -496,51 +639,66 @@ const VisTimeline: React.FC = () => {
     items.add(
       (
         () => {
-          const startMoment = moment("2024-12-01");
-          return [
-            {
-              id: idGenerator(),
-              group: g_software_development.id,
-              content: `
-                OSS: <a href="https://scrapbox.io/pollenJP-Portfolio/pollenjp%2Fsetup-shfmt_(github.com)">pollenjp/setup-shfmt</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=typescript,bash" />
-                </a>
-              `,
-              start: startMoment.toDate(),
-              type: "box",
-            },
-            {
-              id: idGenerator(),
-              group: g_software_development.id,
-              content: `
-                OSS: <a href="https://scrapbox.io/pollenJP-Portfolio/pollenjp%2Fsetup-shellcheck_(github.com)">pollenjp/setup-shellcheck</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=typescript,bash" />
-                </a>
-              `,
-              start: startMoment.toDate(),
-              type: "box",
-            }
-          ]
-        }
-      )()
-    );
-    items.add(
-      (
-        () => {
-          const startMoment = moment("2024-12-19");
+          const startMoment = moment("2023-12-19");
           return [
             {
               id: idGenerator(),
               group: g_article.id,
               content: `
                 <img src="https://i.gyazo.com/e426d5dd7da1a4303463ac4ceede76fa.png" alt="Image from Gyazo"/>
-                <a href="https://scrapbox.io/pollenJP-Portfolio/【Rust製構成管理ツール】JetPorch_とは【次世代Ansible？】">【Rust製構成管理ツール】JetPorch とは【次世代Ansible？】</a>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/【Rust製構成管理ツール】JetPorch_とは【次世代Ansible？】" target="_blank">【Rust製構成管理ツール】JetPorch とは【次世代Ansible？】</a>
               `,
               start: startMoment.toDate(),
               type: "box",
             },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2024-12-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                OSS貢献: <a href="https://scrapbox.io/pollenJP-Portfolio/astral-sh%2Fsetup-uv_(github.com)" target="_blank">astral-sh/setup-uv</a>
+                <img src="https://skillicons.dev/icons?i=typescript,python" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2024-12-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                OSS: <a href="https://scrapbox.io/pollenJP-Portfolio/pollenjp%2Fsetup-shfmt_(github.com)" target="_blank">pollenjp/setup-shfmt</a>
+                <img src="https://skillicons.dev/icons?i=typescript,bash" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            },
+            {
+              id: idGenerator(),
+              group: g_software_development.id,
+              content: `
+                OSS: <a href="https://scrapbox.io/pollenJP-Portfolio/pollenjp%2Fsetup-shellcheck_(github.com)" target="_blank">pollenjp/setup-shellcheck</a>
+                <img src="https://skillicons.dev/icons?i=typescript,bash" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            }
           ]
         }
       )()
@@ -554,10 +712,8 @@ const VisTimeline: React.FC = () => {
               id: idGenerator(),
               group: g_software_development.id,
               content: `
-                OSS: <a href="https://scrapbox.io/pollenJP-Portfolio/CDK-Ansible?search=cdk-ansible">CDK-Ansible</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=rust,ansible" />
-                </a>
+                OSS: <a href="https://scrapbox.io/pollenJP-Portfolio/CDK-Ansible?search=cdk-ansible" target="_blank">CDK-Ansible</a>
+                <img src="https://skillicons.dev/icons?i=rust,ansible" />
               `,
               start: startMoment.toDate(),
               type: "box",
@@ -575,10 +731,8 @@ const VisTimeline: React.FC = () => {
               id: idGenerator(),
               group: g_software_development.id,
               content: `
-                OSS貢献: <a href="https://scrapbox.io/pollenJP-Portfolio/external-secrets%2Fexternal-secrets_(github.com)">external-secrets/external-secrets</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=kubernetes,go" />
-                </a>
+                OSS貢献: <a href="https://scrapbox.io/pollenJP-Portfolio/external-secrets%2Fexternal-secrets_(github.com)" target="_blank">external-secrets/external-secrets</a>
+                <img src="https://skillicons.dev/icons?i=kubernetes,go" />
               `,
               start: startMoment.toDate(),
               type: "box",
@@ -597,7 +751,7 @@ const VisTimeline: React.FC = () => {
               group: g_article.id,
               content: `
                 <img src="https://i.gyazo.com/f253f9b2d9c1bf61982d1557eeebef76.png" alt="Image from Gyazo"/>
-                <a href="https://scrapbox.io/pollenJP-Portfolio/部誌：独習KMC_vol.22_執筆">部誌：独習KMC vol.22 執筆</a>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/部誌：独習KMC_vol.22_執筆" target="_blank">部誌：独習KMC vol.22 執筆</a>
               `,
               start: startMoment.toDate(),
               type: "box",
@@ -661,9 +815,7 @@ const VisTimeline: React.FC = () => {
               group: g_computer_science.id,
               content: `
                 大学の授業でC言語に出会う
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=c" />
-                </a>
+                <img src="https://skillicons.dev/icons?i=c" />
               `,
               start: startMoment.toDate(),
               type: "box",
@@ -682,45 +834,7 @@ const VisTimeline: React.FC = () => {
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/8aad6ea883abff1fe7a3ea2c2070dbc4.png" alt="Image from Gyazo"/>
-                <a href="https://www.amazon.co.jp/dp/4339024880">『コンピュータ設計概論: CMOSから組み込みCPUまで』</a>
-              `,
-              start: startMoment.toDate(),
-              type: "box",
-            }
-          ]
-        }
-      )()
-    );
-    items.add(
-      (
-        () => {
-          const startMoment = moment("2016-12-01");
-          return [
-            {
-              id: idGenerator(),
-              group: g_computer_science.id,
-              content: `
-                <img src="https://i.gyazo.com/d07f5ac25c5828725f16315c6ac382f1.png" alt="Image from Gyazo"/>
-                <a href="https://booklog.jp/item/1/4822298426">『コンピュータの構成と設計』第5版 上 (パタヘネ)</a>
-              `,
-              start: startMoment.toDate(),
-              type: "box",
-            }
-          ]
-        }
-      )()
-    );
-    items.add(
-      (
-        () => {
-          const startMoment = moment("2017-01-01");
-          return [
-            {
-              id: idGenerator(),
-              group: g_computer_science.id,
-              content: `
-                <img src="https://i.gyazo.com/2ffdda5f8eb8bad2ebc291d989ca8ea3.png" alt="Image from Gyazo"/>
-                <a href="https://booklog.jp/item/1/4822298434">『コンピュータの構成と設計』第5版 下 (パタヘネ)</a>
+                <a href="https://www.amazon.co.jp/dp/4339024880" target="_blank">『コンピュータ設計概論: CMOSから組み込みCPUまで』</a>
               `,
               start: startMoment.toDate(),
               type: "box",
@@ -740,13 +854,69 @@ const VisTimeline: React.FC = () => {
               group: g_data_science.id,
               content: `
                 <img src="https://i.gyazo.com/cc020c6733a72b50d507c02cbb4ddf07.png" alt="Image from Gyazo"/>
-                <a href="https://www.oreilly.co.jp/books/9784873117584/">『ゼロから作るDeep Learning』</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=python" />
-                </a>
+                <a href="https://www.oreilly.co.jp/books/9784873117584/" target="_blank">『ゼロから作るDeep Learning』</a>
+                <img src="https://skillicons.dev/icons?i=python" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2017-01-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/d07f5ac25c5828725f16315c6ac382f1.png" alt="Image from Gyazo"/>
+                <a href="https://booklog.jp/item/1/4822298426" target="_blank">『コンピュータの構成と設計』第5版 上 (パタヘネ)</a>
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2017-03-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/2ffdda5f8eb8bad2ebc291d989ca8ea3.png" alt="Image from Gyazo"/>
+                <a href="https://booklog.jp/item/1/4822298434" target="_blank">『コンピュータの構成と設計』第5版 下 (パタヘネ)</a>
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2017-02-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/8b6a4fab26838eb2f0083185fe24c63e.png" alt="Image from Gyazo"/>
+                <a href="https://amzn.asia/d/ftZAB4m" target="_blank">『CPUの創りかた』</a>
+                <img src="https://skillicons.dev/icons?i=c" />
+              `,
+              start: startMoment.toDate(),
               type: "box",
             }
           ]
@@ -764,10 +934,8 @@ const VisTimeline: React.FC = () => {
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/569bc353b659d67427843d0bf01bb6c3.png" alt="Image from Gyazo"/>
-                <a href="https://book.impress.co.jp/books/1119101009">『1週間でLPICの基礎が学べる本 第2版』</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=linux" />
-                </a>
+                <a href="https://book.impress.co.jp/books/1119101009" target="_blank">『1週間でLPICの基礎が学べる本 第2版』</a>
+                <img src="https://skillicons.dev/icons?i=linux" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
@@ -788,10 +956,8 @@ const VisTimeline: React.FC = () => {
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/1689dba5e06a5d18e2a43b0be7cf564c.png" alt="Image from Gyazo"/>
-                <a href="https://www.amazon.co.jp/dp/4797380942">『新しいLinuxの教科書』</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=linux" />
-                </a>
+                <a href="https://www.amazon.co.jp/dp/4797380942" target="_blank">『新しいLinuxの教科書』</a>
+                <img src="https://skillicons.dev/icons?i=linux" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
@@ -812,10 +978,8 @@ const VisTimeline: React.FC = () => {
               group: g_data_science.id,
               content: `
                 <img src="https://i.gyazo.com/c94e97129d2bcae0fa7a72eeda8239ed.png" alt="Image from Gyazo"/>
-                <a href="https://book.impress.co.jp/books/1115101122">『Python機械学習プログラミング』 達人データサイエンティストによる理論と実践</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=sklearn,python" />
-                </a>
+                <a href="https://book.impress.co.jp/books/1115101122" target="_blank">『Python機械学習プログラミング』 達人データサイエンティストによる理論と実践</a>
+                <img src="https://skillicons.dev/icons?i=sklearn,python" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
@@ -835,7 +999,7 @@ const VisTimeline: React.FC = () => {
               group: g_data_science.id,
               content: `
                 <img src="https://i.gyazo.com/586ffd0645d9e387f1da52f15ef5c5f3.png" alt="Image from Gyazo" />
-                <a href="https://booklog.jp/item/1/4061529021">『深層学習 (機械学習プロフェッショナルシリーズ)』</a>
+                <a href="https://booklog.jp/item/1/4061529021" target="_blank">『深層学習 (機械学習プロフェッショナルシリーズ)』</a>
               `,
               start: startMoment.toDate(),
               type: "box",
@@ -855,10 +1019,8 @@ const VisTimeline: React.FC = () => {
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/8d5f458a9a1cf13492ded2745ed9ac27.png" alt="Image from Gyazo"/>
-                <a href="https://scrapbox.io/pollenJP-Portfolio/『30日でできる！OS自作入門』を_Ubuntu16.04%2FNASM_で実装してみた記事">『30日でできる！OS自作入門』</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=c" />
-                </a>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/『30日でできる！OS自作入門』を_Ubuntu16.04%2FNASM_で実装してみた記事" target="_blank">『30日でできる！OS自作入門』</a>
+                <img src="https://skillicons.dev/icons?i=c" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
@@ -879,10 +1041,8 @@ const VisTimeline: React.FC = () => {
               group: g_data_science.id,
               content: `
                 <img src="https://i.gyazo.com/fbf7c8fc4c6b912d69af342e922732e2.png" alt="Image from Gyazo"/>
-                <a href="https://book.impress.co.jp/books/1116101172">『TensorFlow機械学習クックブック』Pythonベースの活用レシピ60+</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=tensorflow,sklearn,python" />
-                </a>
+                <a href="https://book.impress.co.jp/books/1116101172" target="_blank">『TensorFlow機械学習クックブック』Pythonベースの活用レシピ60+</a>
+                <img src="https://skillicons.dev/icons?i=tensorflow,sklearn,python" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
@@ -903,10 +1063,8 @@ const VisTimeline: React.FC = () => {
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/bea028e6ad037240df848e1e4cbc7c4e.png" alt="Image from Gyazo"/>
-                <a href="https://book.mynavi.jp/ec/products/detail/id=121220">『つくりながら学ぶ!PyTorchによる発展ディープラーニング』</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=pytorch,python" />
-                </a>
+                <a href="https://book.mynavi.jp/ec/products/detail/id=121220" target="_blank">『つくりながら学ぶ!PyTorchによる発展ディープラーニング』</a>
+                <img src="https://skillicons.dev/icons?i=pytorch,python" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
@@ -927,10 +1085,8 @@ const VisTimeline: React.FC = () => {
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/674d05e81629e3650bc88e141d00d58b.png" alt="Image from Gyazo"/>
-                <a href="https://book.mynavi.jp/ec/products/detail/id=121220">『ゼロからのOS自作入門』 (みかん本 MikanOS本)</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=c,cpp" />
-                </a>
+                <a href="https://book.mynavi.jp/ec/products/detail/id=121220" target="_blank">『ゼロからのOS自作入門』 (みかん本 MikanOS本)</a>
+                <img src="https://skillicons.dev/icons?i=c,cpp" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
@@ -943,18 +1099,16 @@ const VisTimeline: React.FC = () => {
     items.add(
       (
         () => {
-          const startMoment = moment("2023-02-01");
-          const endMoment = moment("2023-02-28");
+          const startMoment = moment("2021-06-15");
+          const endMoment = moment("2022-06-31");
           return [
             {
               id: idGenerator(),
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/d9c4062188b9478ea26ce3577beee1b8.png" alt="Image from Gyazo"/>
-                <a href="https://contendo.jp/store/ric_t/Product/Detail/Code/J0010400BK0090738001/">『15Stepで習得 Dockerから入るKubernetes』</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=kubernetes,docker" />
-                </a>
+                <a href="https://contendo.jp/store/ric_t/Product/Detail/Code/J0010400BK0090738001/" target="_blank">『15Stepで習得 Dockerから入るKubernetes』</a>
+                <img src="https://skillicons.dev/icons?i=kubernetes,docker" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
@@ -975,10 +1129,8 @@ const VisTimeline: React.FC = () => {
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/f4153c4d1b8ff71bd3cf7c21bb774198.png" alt="Image from Gyazo"/>
-                <a href="https://book.mynavi.jp/manatee/c-r/books/detail/id=131170">『詳解Go言語Webアプリケーション開発』</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=go" />
-                </a>
+                <a href="https://book.mynavi.jp/manatee/c-r/books/detail/id=131170" target="_blank">『詳解Go言語Webアプリケーション開発』</a>
+                <img src="https://skillicons.dev/icons?i=go" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
@@ -999,10 +1151,8 @@ const VisTimeline: React.FC = () => {
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/d360cfcef09e02dbfc46685eff45deac.png" alt="Image from Gyazo"/>
-                <a href="https://www.shuwasystem.co.jp/book/9784798067315.html">『Webアプリ開発で学ぶ Rust言語入門』</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=rust" />
-                </a>
+                <a href="https://www.shuwasystem.co.jp/book/9784798067315.html" target="_blank">『Webアプリ開発で学ぶ Rust言語入門』</a>
+                <img src="https://skillicons.dev/icons?i=rust" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
@@ -1023,10 +1173,8 @@ const VisTimeline: React.FC = () => {
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/5fd026987d8fe03c3e93fd60d889897d.png" alt="Image from Gyazo"/>
-                <a href="https://gihyo.jp/dp/ebook/2025/978-4-297-14900-0">『Docker&Kubernetesネットワークのしくみ』</a>
-                <a href="https://skillicons.dev">
-                  <img src="https://skillicons.dev/icons?i=kubernetes,docker" />
-                </a>
+                <a href="https://gihyo.jp/dp/ebook/2025/978-4-297-14900-0" target="_blank">『Docker&Kubernetesネットワークのしくみ』</a>
+                <img src="https://skillicons.dev/icons?i=kubernetes,docker" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
