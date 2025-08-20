@@ -2,6 +2,24 @@ div.vis-item.vis-box {
   text-align: left;
 }
 
+.vis-item.vis-dot {
+  border-width: 10px;
+  border-radius: 10px;
+}
+
+.vis-item.vis-line {
+  border-width: 5px;
+}
+
+.vis-item.vis-range {
+  background-color: rgba(213, 221, 246, 0.4);
+}
+
+.vis-item.vis-box {
+  border-width: 3px;
+  /* border-color: rgba(100, 100, 100, 1.0); */
+}
+
 .vis-item-content img {
   height: 1.5em;
   vertical-align: middle;

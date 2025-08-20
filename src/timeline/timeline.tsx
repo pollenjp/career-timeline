@@ -535,7 +535,7 @@ const VisTimeline: React.FC = () => {
               id: idGenerator(),
               group: g_software_development.id,
               content: `
-                <a href="https://scrapbox.io/pollenJP-Portfolio/CDK-Ansible?search=cdk-ansible">CDK-Ansible</a>
+                OSS: <a href="https://scrapbox.io/pollenJP-Portfolio/CDK-Ansible?search=cdk-ansible">CDK-Ansible</a>
                 <a href="https://skillicons.dev">
                   <img src="https://skillicons.dev/icons?i=rust,ansible" />
                 </a>
@@ -796,6 +796,30 @@ const VisTimeline: React.FC = () => {
                 <a href="https://book.mynavi.jp/ec/products/detail/id=121220">『ゼロからのOS自作入門』 (みかん本 MikanOS本)</a>
                 <a href="https://skillicons.dev">
                   <img src="https://skillicons.dev/icons?i=c,cpp" />
+                </a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "box",
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2023-02-01");
+          const endMoment = moment("2023-02-28");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/d9c4062188b9478ea26ce3577beee1b8.png" alt="Image from Gyazo"/>
+                <a href="https://contendo.jp/store/ric_t/Product/Detail/Code/J0010400BK0090738001/">『15Stepで習得 Dockerから入るKubernetes』</a>
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=kubernetes,docker" />
                 </a>
               `,
               start: startMoment.toDate(),
