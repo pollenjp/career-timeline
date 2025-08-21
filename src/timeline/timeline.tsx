@@ -26,20 +26,21 @@ const VisTimeline: React.FC = () => {
 
   const g_sub_work: DataGroup = {
     id: idGenerator(),
-    content: "副業 (インターン等)",
+    content: `副業 (インターン等)`,
   };
   groups.add(g_sub_work);
 
   const g_organization: DataGroup = {
     id: idGenerator(),
-    content: "所属",
+    content: `メイン`,
     nestedGroups: [ g_sub_work.id ],
   };
   groups.add(g_organization);
 
   const g_main: DataGroup = {
     id: idGenerator(),
-    content: "メイン",
+    content: `所属`,
+    // treeLevel: 0,
     nestedGroups: [ g_organization.id ],
   };
   groups.add(g_main);
@@ -408,23 +409,29 @@ const VisTimeline: React.FC = () => {
 
   const g_software_development: DataGroup = {
     id: idGenerator(),
-    content: "ソフトウェア開発",
+    content: ``,
   };
   groups.add(g_software_development);
 
+  const _g_software_development: DataGroup = {
+    id: idGenerator(),
+    content: `成果物：ソフトウェア開発`,
+    nestedGroups: [ g_software_development.id ],
+  };
+  groups.add(_g_software_development);
 
   const g_article: DataGroup = {
     id: idGenerator(),
-    content: "記事",
+    content: ``,
   };
   groups.add(g_article);
 
-  const g_personal_development: DataGroup = {
+  const _g_article: DataGroup = {
     id: idGenerator(),
-    content: "成果物",
-    nestedGroups: [ g_software_development.id, g_article.id ],
+    content: `成果物：記事`,
+    nestedGroups: [ g_article.id ],
   };
-  groups.add(g_personal_development);
+  groups.add(_g_article);
 
   {
     items.add(
