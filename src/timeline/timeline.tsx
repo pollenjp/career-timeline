@@ -551,6 +551,28 @@ const VisTimeline: React.FC = () => {
     items.add(
       (
         () => {
+          const startMoment = moment("2019-05-31");
+          return [
+            {
+              id: idGenerator(),
+              group: g_article.id,
+              content: `
+                <img src="https://i.gyazo.com/1f1d059137200662cb4b76746b1949e7.png" alt="Image from Gyazo"/>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/DL輪読会:_Simple_Online_Realtime_Tracking_with_a_Deep_Association_Metric" target="_blank">
+                  DL輪読会: PSMNet Pyramid Stereo Matching Network
+                </a>
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+              className: boxColorClassAllocator(),
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
           const startMoment = moment("2019-09-13");
           return [
             {
