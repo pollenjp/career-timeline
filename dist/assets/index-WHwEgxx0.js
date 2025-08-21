@@ -242,7 +242,7 @@ Y.version="2.30.1";DW(vt);Y.fn=ne;Y.min=pX;Y.max=vX;Y.now=mX;Y.utc=cn;Y.unix=BQ;
                     <br>フルリモートでガッツリ働きながら介護
                   </div>
                 `,start:S.toDate(),end:E.toDate(),type:"range"}]})());const f={id:he(),content:""};r.add(f);const h={id:he(),content:"成果物：ソフトウェア開発",nestedGroups:[f.id]};r.add(h);const d={id:he(),content:""};r.add(d);const v={id:he(),content:"成果物：記事",nestedGroups:[d.id]};r.add(v),l.add((()=>{const S=Y("2017-07-30");return[{id:he(),group:f.id,content:`
-                <img src="https://i.gyazo.com/850e054cffe7f75ee60641ad32d921d5.png" alt="Image from Gyazo"/>
+                <img src="https://i.gyazo.com/c2dca644b47fbd4376b0bc4915ed03bd.png" alt="Image from Gyazo"/>
                 WebApp: <a href="https://scrapbox.io/pollenJP-Portfolio/手書き数字認識Webアプリケーション" target="_blank">手書き数字認識App</a>
                 <img src="https://skillicons.dev/icons?i=python" />
               `,start:S.toDate(),type:"box",className:Ae()}]})()),l.add((()=>{const S=Y("2017-11-24");return[{id:he(),group:f.id,content:`

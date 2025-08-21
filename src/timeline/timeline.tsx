@@ -443,7 +443,7 @@ const VisTimeline: React.FC = () => {
               id: idGenerator(),
               group: g_software_development.id,
               content: `
-                <img src="https://i.gyazo.com/850e054cffe7f75ee60641ad32d921d5.png" alt="Image from Gyazo"/>
+                <img src="https://i.gyazo.com/c2dca644b47fbd4376b0bc4915ed03bd.png" alt="Image from Gyazo"/>
                 WebApp: <a href="https://scrapbox.io/pollenJP-Portfolio/手書き数字認識Webアプリケーション" target="_blank">手書き数字認識App</a>
                 <img src="https://skillicons.dev/icons?i=python" />
               `,
