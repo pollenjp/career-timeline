@@ -8,7 +8,7 @@ div.vis-item.vis-box {
 }
 
 .vis-item.vis-line {
-  border-width: 5px;
+  border-width: 3px;
 }
 
 .vis-item.vis-box {
@@ -34,6 +34,10 @@ div.vis-item.vis-box {
   height: 1.5em;
   vertical-align: middle;
 }
+
+/**
+ * background item color
+ */
 
 .vis-item.vis-background.background-color-gray {
   background-color: rgba(200, 200, 200, 0.3);
@@ -65,4 +69,64 @@ div.vis-item.vis-box {
 
 .vis-item.vis-background.background-color-pink {
   background-color: rgba(232, 62, 140, 0.1);
+}
+
+/**
+ * box item color
+ */
+
+.vis-item.vis-box.box-color-gray:not(.vis-selected),
+.vis-item.vis-line.box-color-gray:not(.vis-selected),
+.vis-item.vis-dot.box-color-gray:not(.vis-selected)
+{
+  border-color: rgba(200, 200, 200, 0.4);
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.vis-item.vis-box.box-color-blue:not(.vis-selected),
+.vis-item.vis-line.box-color-blue:not(.vis-selected),
+.vis-item.vis-dot.box-color-blue:not(.vis-selected)
+{
+  border-color: rgba(0, 123, 255, 0.4);
+  background-color: rgba(204, 228, 255, 0.9);
+}
+
+.vis-item.vis-box.box-color-yellow:not(.vis-selected),
+.vis-item.vis-line.box-color-yellow:not(.vis-selected),
+.vis-item.vis-dot.box-color-yellow:not(.vis-selected)
+{
+  border-color: rgba(255, 193, 7, 0.4);
+  background-color: rgba(253, 241, 205, 0.9);
+}
+
+.vis-item.vis-box.box-color-red:not(.vis-selected),
+.vis-item.vis-line.box-color-red:not(.vis-selected),
+.vis-item.vis-dot.box-color-red:not(.vis-selected)
+{
+  border-color: rgba(220, 53, 69, 0.4);
+  background-color: rgba(255, 214, 219, 0.9);
+}
+
+.vis-item.vis-box.box-color-purple:not(.vis-selected),
+.vis-item.vis-line.box-color-purple:not(.vis-selected),
+.vis-item.vis-dot.box-color-purple:not(.vis-selected)
+{
+  border-color: rgba(111, 66, 193, 0.4);
+  background-color: rgba(229, 216, 255, 0.9);
+}
+
+.vis-item.vis-box.box-color-orange:not(.vis-selected),
+.vis-item.vis-line.box-color-orange:not(.vis-selected),
+.vis-item.vis-dot.box-color-orange:not(.vis-selected)
+{
+  border-color: rgba(253, 126, 20, 0.4);
+  background-color: rgba(255, 230, 210, 0.9);
+}
+
+.vis-item.vis-box.box-color-pink:not(.vis-selected),
+.vis-item.vis-line.box-color-pink:not(.vis-selected),
+.vis-item.vis-dot.box-color-pink:not(.vis-selected)
+{
+  border-color: rgba(232, 62, 140, 0.4);
+  background-color: rgba(255, 213, 232, 0.9);
 }

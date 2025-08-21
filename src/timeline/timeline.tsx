@@ -3,6 +3,7 @@ import moment from "moment";
 import type { DataSetDataGroup, DataSetDataItem, TimelineOptions, DataGroup } from "vis-timeline";
 import { Timeline } from "vis-timeline";
 import { DataSet } from "vis-data";
+import { BgColorClass, bgColorClassAllocator, boxColorClassAllocator } from "./style";
 import "./timeline.css"
 
 const idGenerator = (() => {
@@ -10,30 +11,6 @@ const idGenerator = (() => {
   return () => {
     id++;
     return id;
-  };
-})();
-
-const BgColorClass = {
-  // gray is reserved color for inactive period
-  Gray: "background-color-gray",
-  Blue: "background-color-blue",
-  Green: "background-color-green",
-  Yellow: "background-color-yellow",
-  Red: "background-color-red",
-  Purple: "background-color-purple",
-  Orange: "background-color-orange",
-  Pink: "background-color-pink",
-} as const;
-type AllocatableBgColorClassT = Exclude<keyof typeof BgColorClass, "Gray">;
-const allocatableBgColorClasses: AllocatableBgColorClassT[] = Object.keys(BgColorClass)
-  .filter(k => isNaN(Number(k)) && k !== "Gray") as AllocatableBgColorClassT[];
-
-const bgColorClassAllocator = (() => {
-  let id = 0;
-  return () => {
-    const bgColor = allocatableBgColorClasses[id % allocatableBgColorClasses.length];
-    id++;
-    return BgColorClass[bgColor];
   };
 })();
 
@@ -59,6 +36,13 @@ const VisTimeline: React.FC = () => {
     nestedGroups: [ g_sub_work.id ],
   };
   groups.add(g_organization);
+
+  const g_main: DataGroup = {
+    id: idGenerator(),
+    content: "メイン",
+    nestedGroups: [ g_organization.id ],
+  };
+  groups.add(g_main);
 
   const items: DataSetDataItem = new DataSet();
   {
@@ -319,6 +303,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
               options: {
                 align: "right",
               },
@@ -454,6 +439,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -474,6 +460,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -494,6 +481,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -513,6 +501,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -534,6 +523,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -553,6 +543,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -572,6 +563,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -591,6 +583,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -611,6 +604,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -631,6 +625,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -650,6 +645,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -669,6 +665,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -688,6 +685,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
             {
               id: idGenerator(),
@@ -698,6 +696,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -717,6 +716,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -736,6 +736,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -755,6 +756,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             },
           ]
         }
@@ -800,6 +802,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -819,6 +822,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -838,6 +842,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -860,6 +865,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -879,6 +885,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -898,6 +905,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -918,6 +926,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -940,6 +949,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -962,6 +972,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -984,6 +995,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1003,6 +1015,7 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1025,6 +1038,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1047,6 +1061,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1069,6 +1084,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1091,6 +1107,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1113,6 +1130,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1135,6 +1153,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1157,6 +1176,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1179,6 +1199,7 @@ const VisTimeline: React.FC = () => {
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "box",
+              className: boxColorClassAllocator(),
             }
           ]
         }
