@@ -8,7 +8,7 @@ function App() {
         <a href="https://pollenjp.github.io">HOME</a>
       </div>
       <div>
-        操作方法:
+        操作方法: timeline領域をクリックしてフォーカスモードに入ることで操作できるようになります
         <ul>
           <li>折りたたみ: 左側のラベルで折りたたむことができます</li>
           <li>垂直スクロール: 左側のラベルにマウスポインターがある状態で <code>Scroll</code></li>

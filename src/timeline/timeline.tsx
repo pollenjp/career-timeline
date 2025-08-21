@@ -1320,6 +1320,7 @@ const VisTimeline: React.FC = () => {
         axis: "both", // axis orientation: 'bottom', 'top', or 'both'
         item: "bottom",
       },
+      clickToUse: true,
     };
   })();
 
@@ -1339,15 +1340,69 @@ const VisTimeline: React.FC = () => {
     }
 	}, [containerRef, timelineRef]);
 
-	return <div
-    ref={containerRef}
-    style={{
-      boxSizing: "border-box",
-      width: "100%",
-      border: "1px solid lightgray",
-    }}
-  >
-    <div></div>
+  const move = (timeline: Timeline, percentage: number) => {
+    const range = timeline.getWindow();
+    const interval = range.end.getTime() - range.start.getTime();
+
+    timeline.setWindow(
+      new Date(range.start.getTime() - interval * percentage),
+      new Date(range.end.getTime() - interval * percentage),
+    );
+  }
+
+
+  const zoomIn = () => {
+    if (timelineRef.current === null) {
+      console.log("timelineRef.current is null");
+      return;
+    }
+    timelineRef.current.zoomIn(0.2);
+    console.log("zoomIn");
+  }
+
+  const zoomOut = () => {
+    if (timelineRef.current === null) {
+      console.log("timelineRef.current is null");
+      return;
+    }
+    timelineRef.current.zoomOut(0.2);
+    console.log("zoomOut");
+  }
+
+  const moveLeft   = () => {
+    if (timelineRef.current === null) {
+      console.log("timelineRef.current is null");
+      return;
+    }
+    move(timelineRef.current, 0.2);
+    console.log("moveLeft");
+  }
+
+  const moveRight = () => {
+    if (timelineRef.current === null) {
+      console.log("timelineRef.current is null");
+      return;
+    }
+    move(timelineRef.current, -0.2);
+    console.log("moveRight");
+  }
+
+  return <div>
+    <div>
+      <button onClick={zoomIn}>zoomIn</button>
+      <button onClick={zoomOut}>zoomOut</button>
+      <button onClick={moveLeft}>moveLeft</button>
+      <button onClick={moveRight}>moveRight</button>
+    </div>
+    <div
+      ref={containerRef}
+      style={{
+        boxSizing: "border-box",
+        width: "100%",
+        border: "1px solid lightgray",
+      }}
+    >
+    </div>;
   </div>;
 };
 
