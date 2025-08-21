@@ -799,6 +799,7 @@ const VisTimeline: React.FC = () => {
       (
         () => {
           const startMoment = moment("2025-02-01");
+          const endMoment = moment();
           return [
             {
               id: idGenerator(),
@@ -808,8 +809,9 @@ const VisTimeline: React.FC = () => {
                 <img src="https://skillicons.dev/icons?i=rust,ansible" />
               `,
               start: startMoment.toDate(),
-              type: "box",
-              className: boxColorClassAllocator(),
+              end: endMoment.toDate(),
+              type: "range",
+              // className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1164,20 +1166,20 @@ const VisTimeline: React.FC = () => {
       (
         () => {
           const startMoment = moment("2021-04-01");
-          const endMoment = moment("2022-01-31");
+          const endMoment = moment("2021-07-31");
           return [
             {
               id: idGenerator(),
               group: g_computer_science.id,
               content: `
                 <img src="https://i.gyazo.com/bea028e6ad037240df848e1e4cbc7c4e.png" alt="Image from Gyazo"/>
-                <a href="https://book.mynavi.jp/ec/products/detail/id=121220" target="_blank">『つくりながら学ぶ!PyTorchによる発展ディープラーニング』</a>
+                <a href="https://book.mynavi.jp/ec/products/detail/id=104855" target="_blank">『つくりながら学ぶ!PyTorchによる発展ディープラーニング』</a>
                 <img src="https://skillicons.dev/icons?i=pytorch,python" />
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
-              type: "box",
-              className: boxColorClassAllocator(),
+              type: "range",
+              // className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1199,8 +1201,8 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
-              type: "box",
-              className: boxColorClassAllocator(),
+              type: "range",
+              // className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1210,7 +1212,7 @@ const VisTimeline: React.FC = () => {
       (
         () => {
           const startMoment = moment("2021-06-15");
-          const endMoment = moment("2022-06-31");
+          const endMoment = moment("2022-09-30");
           return [
             {
               id: idGenerator(),
@@ -1222,8 +1224,30 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
-              type: "box",
-              className: boxColorClassAllocator(),
+              type: "range",
+              // className: boxColorClassAllocator(),
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2022-04-01");
+          const endMoment = moment("2023-01-31");
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/0275f2d3ce001a49bc3296bf8bf4d6ad.png" alt="Image from Gyazo"/>
+                <a href="https://www.kadokawa.co.jp/product/301801000263/" target="_blank">『深層学習』 (Goodfellow)</a>
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "range",
+              // className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1291,8 +1315,32 @@ const VisTimeline: React.FC = () => {
               `,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
-              type: "box",
-              className: boxColorClassAllocator(),
+              type: "range",
+              // className: boxColorClassAllocator(),
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2025-06-26");
+          const endMoment = moment();
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/4f9900ea832f7ff7c7367e2677eb4c38.png" alt="Image from Gyazo"/>
+                <a href="https://www.oreilly.co.jp/books/9784814401185/" target="_blank">『Async Rust』</a>
+                <img src="https://skillicons.dev/icons?i=rust" />
+                (進行形)
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "range",
+              // className: boxColorClassAllocator(),
             }
           ]
         }
@@ -1314,7 +1362,7 @@ const VisTimeline: React.FC = () => {
       horizontalScroll: true,
       horizontalScrollKey: "shiftKey",
       zoomKey: "ctrlKey",
-      // stack: true, // default
+      stack: true, // default
       // stack: false,
       orientation: {
         axis: "both", // axis orientation: 'bottom', 'top', or 'both'
@@ -1388,7 +1436,18 @@ const VisTimeline: React.FC = () => {
   }
 
   return <div>
-    <div>
+    <div
+      style={{
+        position: "fixed",  // 画面に固定
+        bottom: "20px",     // 下から20px
+        right: "20px",      // 右から20px
+        background: "rgba(128,0,128,0.8)",
+        padding: "10px 20px",
+        borderRadius: "12px",
+        boxShadow: "0 4px 12px rgba(0,0,0,1.0)",
+        zIndex: 1000, // 他の要素より前面に表示
+      }}
+    >
       <button onClick={zoomIn}>zoomIn</button>
       <button onClick={zoomOut}>zoomOut</button>
       <button onClick={moveLeft}>moveLeft</button>
