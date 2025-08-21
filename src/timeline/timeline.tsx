@@ -469,6 +469,26 @@ const VisTimeline: React.FC = () => {
     items.add(
       (
         () => {
+          const startMoment = moment("2018-04-01");
+          return [
+            {
+              id: idGenerator(),
+              group: g_article.id,
+              content: `
+                <img src="https://i.gyazo.com/5d17ee021a1747402fac77a5db414457.png" alt="Image from Gyazo"/>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/『30日でできる！OS自作入門』を_Ubuntu16.04%2FNASM_で実装してみた記事" target="_blank">『OS自作入門』のNASM実装記事</a>
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+              className: boxColorClassAllocator(),
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
           const startMoment = moment("2018-07-23");
           return [
             {
@@ -478,6 +498,7 @@ const VisTimeline: React.FC = () => {
                 <img src="https://i.gyazo.com/850e054cffe7f75ee60641ad32d921d5.png" alt="Image from Gyazo"/>
                 <a href="https://scrapbox.io/pollenJP-Portfolio/傘忘防ボット_LINE_Bot" target="_blank">傘忘防ボット</a>
                 <img src="https://skillicons.dev/icons?i=nodejs,postgres,raspberrypi,heroku" />
+                <img src="https://i.gyazo.com/8235593118e5b941da2f337b0293f0ab.png" alt="line logo"/>
               `,
               start: startMoment.toDate(),
               type: "box",
@@ -693,6 +714,26 @@ const VisTimeline: React.FC = () => {
               content: `
                 OSS: <a href="https://scrapbox.io/pollenJP-Portfolio/pollenjp%2Fsetup-shellcheck_(github.com)" target="_blank">pollenjp/setup-shellcheck</a>
                 <img src="https://skillicons.dev/icons?i=typescript,bash" />
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+              className: boxColorClassAllocator(),
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2025-01-20");
+          return [
+            {
+              id: idGenerator(),
+              group: g_article.id,
+              content: `
+                <img src="https://i.gyazo.com/ce55023e15350bb1728d630043fcaf81.png" alt="Image from Gyazo"/>
+                Zenn Book: <a href="https://scrapbox.io/pollenJP-Portfolio/内製ツール開発を支える_IaC_の重要性" target="_blank">内製ツール開発を支える IaC の重要性</a>
               `,
               start: startMoment.toDate(),
               type: "box",
