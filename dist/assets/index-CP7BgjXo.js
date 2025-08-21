@@ -172,9 +172,9 @@ Y.version="2.30.1";DW(vt);Y.fn=ne;Y.min=pX;Y.max=vX;Y.now=mX;Y.utc=cn;Y.unix=BQ;
                   </div>
                 `,start:w.toDate(),end:D.toDate(),type:"range"}]})()),l.add((()=>{const S=n.id,w=Y("2016-04-01");return[{id:he(),group:S,content:`
                 受験失敗
-              `,start:w.toDate(),type:"point"}]})()),l.add((()=>{const S=n.id,w=Y("2016-04-01"),D=Y("2021-03-30");return[{id:he(),content:"",start:w.toDate(),end:D.toDate(),type:"background",className:jh()},{id:he(),group:S,content:`
+              `,start:w.toDate(),type:"point"}]})()),l.add((()=>{const S=n.id,w=Y("2016-04-01"),D=Y("2021-03-30"),E='<img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>';return[{id:he(),content:`${E}`,start:w.toDate(),end:D.toDate(),type:"background",className:jh()},{id:he(),group:S,content:`
                 <div>
-                  <img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>
+                  ${E}
                   <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)" target="_blank">上智大学</a> (${w.format("YYYY-MM-DD")} ～ ${D.format("YYYY-MM-DD")})
                   <br>理工学部 情報理工学科
                 </div>
@@ -197,14 +197,14 @@ Y.version="2.30.1";DW(vt);Y.fn=ne;Y.min=pX;Y.max=vX;Y.now=mX;Y.utc=cn;Y.unix=BQ;
                   <br>機械学習エンジニア
                     <img src="https://skillicons.dev/icons?i=pytorch,docker,sklearn,opencv,python" />
                 </div>
-              `,start:S.toDate(),end:w.toDate(),type:"range"}})()]),l.add((()=>{const S=Y("2019-05-01"),w=Y("2020-04-01");return[{id:he(),content:"",start:S.toDate(),end:w.toDate(),type:"background",className:pd.Gray},{id:he(),group:n.id,content:`
+              `,start:S.toDate(),end:w.toDate(),type:"range"}})()]),l.add((()=>{const S=Y("2019-06-01"),w=Y("2020-03-31");return[{id:he(),content:"",start:S.toDate(),end:w.toDate(),type:"background",className:pd.Gray},{id:he(),group:n.id,content:`
                 <div>
                   <a href="https://scrapbox.io/pjp/父親の癌宣告とその後の記録" target="_blank">休学・休職 / 復学</a> (${S.format("YYYY-MM-DD")} ～ ${w.format("YYYY-MM-DD")})
                   <br>身内の病気の都合で実家に帰省
                 </div>
-              `,start:S.toDate(),end:w.toDate(),type:"range"}]})()),l.add((()=>{const S=Y("2021-04-01"),w=Y("2023-03-31");return[{id:he(),content:"",start:S.toDate(),end:w.toDate(),type:"background",className:jh()},{id:he(),group:n.id,content:`
+              `,start:S.toDate(),end:w.toDate(),type:"range"}]})()),l.add((()=>{const S=Y("2021-04-01"),w=Y("2023-03-31"),D='<img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>';return[{id:he(),content:`${D}`,start:S.toDate(),end:w.toDate(),type:"background",className:jh()},{id:he(),group:n.id,content:`
                   <div>
-                    <img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>
+                    ${D}
                     <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)" target="_blank">上智大学大学院</a> (${S.format("YYYY-MM-DD")} ～ ${w.format("YYYY-MM-DD")})
                     <br>理工学専攻 情報学領域 山中研究室
                       <img src="https://skillicons.dev/icons?i=pytorch,python,blender,docker" />
@@ -228,9 +228,9 @@ Y.version="2.30.1";DW(vt);Y.fn=ne;Y.min=pX;Y.max=vX;Y.now=mX;Y.utc=cn;Y.unix=BQ;
                   <br>コース：Expert Camp #5 (発展コース mikanos-net の再現実装)
                     <img src="https://skillicons.dev/icons?i=c,cpp" />
                 </div>
-              `,start:S.toDate(),end:w.toDate(),type:"box"}})()]),l.add((()=>{const S=Y("2023-04-04"),w=Y("2025-06-30");return[{id:he(),content:"",start:S.toDate(),end:w.toDate(),type:"background",className:jh()},{id:he(),group:n.id,content:`
+              `,start:S.toDate(),end:w.toDate(),type:"box"}})()]),l.add((()=>{const S=Y("2023-04-04"),w=Y("2025-06-30"),D='<img src="https://i.gyazo.com/49edd6816e05222cc3951f1ab92c5481.png" alt="Image from Gyazo"/>';return[{id:he(),content:`${D}`,start:S.toDate(),end:w.toDate(),type:"background",className:jh()},{id:he(),group:n.id,content:`
                   <div>
-                    <img src="https://i.gyazo.com/49edd6816e05222cc3951f1ab92c5481.png" alt="Image from Gyazo"/>
+                    ${D}
                     <a href="https://scrapbox.io/pollenJP-Portfolio/KLab株式会社" target="_blank">KLab株式会社 所属 SRE</a> (${S.format("YYYY-MM-DD")} ～ ${w.format("YYYY-MM-DD")})
                     <br>内容：サービス運用・開発インフラ整備・ログ監視ツール作成
                     <br>
@@ -239,7 +239,7 @@ Y.version="2.30.1";DW(vt);Y.fn=ne;Y.min=pX;Y.max=vX;Y.now=mX;Y.utc=cn;Y.unix=BQ;
                 `,start:S.toDate(),end:w.toDate(),type:"range"}]})()),l.add((()=>{const S=Y("2024-02-01"),w=Y("2024-09-30");return[{id:he(),content:"",start:S.toDate(),end:w.toDate(),type:"background",className:pd.Gray},{id:he(),group:n.id,content:`
                   <div>
                     <a href="https://scrapbox.io/pjp/父親の癌宣告とその後の記録" target="_blank">壮絶な介護期</a> (${S.format("YYYY-MM-DD")} ～ ${w.format("YYYY-MM-DD")})
-                    <br>フルリモートで働きながら介護
+                    <br>フルリモートでガッツリ働きながら介護
                   </div>
                 `,start:S.toDate(),end:w.toDate(),type:"range"}]})());const f={id:he(),content:"ソフトウェア開発"};r.add(f);const h={id:he(),content:"記事"};r.add(h);const d={id:he(),content:"成果物",nestedGroups:[f.id,h.id]};r.add(d),l.add((()=>{const S=Y("2017-07-30");return[{id:he(),group:f.id,content:`
                 <img src="https://i.gyazo.com/850e054cffe7f75ee60641ad32d921d5.png" alt="Image from Gyazo"/>

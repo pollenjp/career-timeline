@@ -102,9 +102,10 @@ const VisTimeline: React.FC = () => {
             const gid = g_organization.id;
             const startMoment = moment("2016-04-01");
             const endMoment = moment("2021-03-30");
+            const icon_content = `<img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>`;
             return [{
               id: idGenerator(),
-              content: ``,
+              content: `${icon_content}`,
               start: startMoment.toDate(),
               end: endMoment.toDate(),
               type: "background",
@@ -115,7 +116,7 @@ const VisTimeline: React.FC = () => {
               group: gid,
               content: `
                 <div>
-                  <img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>
+                  ${icon_content}
                   <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)" target="_blank">上智大学</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                   <br>理工学部 情報理工学科
                 </div>
@@ -200,8 +201,8 @@ const VisTimeline: React.FC = () => {
       items.add(
         (
           () => {
-            const startMoment = moment("2019-05-01");
-            const endMoment = moment("2020-04-01");
+            const startMoment = moment("2019-06-01");
+            const endMoment = moment("2020-03-31");
             return [
             {
               id: idGenerator(),
@@ -232,10 +233,11 @@ const VisTimeline: React.FC = () => {
           () => {
             const startMoment = moment("2021-04-01");
             const endMoment = moment("2023-03-31");
+            const icon_content = `<img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>`;
             return [
               {
                 id: idGenerator(),
-                content: ``,
+                content: `${icon_content}`,
                 start: startMoment.toDate(),
                 end: endMoment.toDate(),
                 type: "background",
@@ -246,7 +248,7 @@ const VisTimeline: React.FC = () => {
                 group: g_organization.id,
                 content: `
                   <div>
-                    <img src="https://i.gyazo.com/a618027a79330420d11240c000c8cf3f.png" alt="Image from Gyazo"/>
+                    ${icon_content}
                     <a href="https://scrapbox.io/pollenJP-Portfolio/上智大学大学院_理工学専攻_情報学領域_(山中研究室)" target="_blank">上智大学大学院</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                     <br>理工学専攻 情報学領域 山中研究室
                       <img src="https://skillicons.dev/icons?i=pytorch,python,blender,docker" />
@@ -337,10 +339,11 @@ const VisTimeline: React.FC = () => {
           () => {
             const startMoment = moment("2023-04-04");
             const endMoment = moment("2025-06-30");
+            const icon_content = `<img src="https://i.gyazo.com/49edd6816e05222cc3951f1ab92c5481.png" alt="Image from Gyazo"/>`;
             return [
               {
                 id: idGenerator(),
-                content: ``,
+                content: `${icon_content}`,
                 start: startMoment.toDate(),
                 end: endMoment.toDate(),
                 type: "background",
@@ -351,7 +354,7 @@ const VisTimeline: React.FC = () => {
                 group: g_organization.id,
                 content: `
                   <div>
-                    <img src="https://i.gyazo.com/49edd6816e05222cc3951f1ab92c5481.png" alt="Image from Gyazo"/>
+                    ${icon_content}
                     <a href="https://scrapbox.io/pollenJP-Portfolio/KLab株式会社" target="_blank">KLab株式会社 所属 SRE</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
                     <br>内容：サービス運用・開発インフラ整備・ログ監視ツール作成
                     <br>
@@ -386,7 +389,7 @@ const VisTimeline: React.FC = () => {
                 content: `
                   <div>
                     <a href="https://scrapbox.io/pjp/父親の癌宣告とその後の記録" target="_blank">壮絶な介護期</a> (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')})
-                    <br>フルリモートで働きながら介護
+                    <br>フルリモートでガッツリ働きながら介護
                   </div>
                 `,
                 start: startMoment.toDate(),
