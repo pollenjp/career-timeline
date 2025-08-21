@@ -1320,7 +1320,7 @@ const VisTimeline: React.FC = () => {
         axis: "both", // axis orientation: 'bottom', 'top', or 'both'
         item: "bottom",
       },
-      clickToUse: true,
+      // clickToUse: true,
     };
   })();
 
