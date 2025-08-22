@@ -621,6 +621,28 @@ const VisTimeline: React.FC = () => {
     items.add(
       (
         () => {
+          const startMoment = moment("2020-08-07");
+          return [
+            {
+              id: idGenerator(),
+              group: g_article.id,
+              content: `
+                <img src="https://i.gyazo.com/463f497d59af1441b91b5a06e05af3f6.png" alt="Image from Gyazo"/>
+                <a href="https://scrapbox.io/pollenJP-Portfolio/DL輪読会:_IDA-3D:_Instance-Depth-Aware_3D_Object_Detection_From_Stereo_Vision_for_Autonomous_Driving" target="_blank">
+                  DL輪読会: IDA-3D: Instance-Depth-Aware 3D Object Detection From Stereo Vision for Autonomous Driving
+                </a>
+              `,
+              start: startMoment.toDate(),
+              type: "box",
+              className: boxColorClassAllocator(),
+            },
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
           const startMoment = moment("2020-11-25");
           return [
             {
