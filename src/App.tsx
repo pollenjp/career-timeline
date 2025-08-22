@@ -11,10 +11,15 @@ function App() {
         操作方法:
         {/* timeline領域をクリックしてフォーカスモードに入ることで操作できるようになります */}
         <ul>
-          <li>折りたたみ: 左側のラベルで折りたたむことができます</li>
-          <li>垂直スクロール: 左側のラベルにマウスポインターがある状態で <code>Scroll</code></li>
-          <li>ズームイン/アウト: timeline 上にマウスポインターがある状態で <code>Ctrl</code> + <code>Scroll</code></li>
-          <li>水平スクロール: timeline 上にマウスポインターがある状態で <code>Scroll</code></li>
+          <li><strong>ボタン操作</strong>: 画面右下のボタンからズームと移動ができます</li>
+          <li><strong>マウスモード</strong>: timeline 上で一度クリックするとマウスモードに有効になります
+            <ul>
+              <li>左側のラベルをクリック → <strong>折りたたみ</strong></li>
+              <li>timeline 上にマウスポインターがある状態で <code>Scroll</code> → <strong>水平スクロール</strong></li>
+              <li>timeline 上にマウスポインターがある状態で <code>Ctrl</code> + <code>Scroll</code> → <strong>ズームイン/アウト</strong></li>
+              <li>左側のラベルにマウスポインターがある状態で <code>Scroll</code> → <strong>垂直スクロール</strong></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <VisTimeline />
