@@ -33,6 +33,12 @@ div.vis-item.vis-box {
 .vis-item-content img {
   height: 1.5em;
   vertical-align: middle;
+  /* border: 1px solid black; */
+  box-shadow: 1px 1px 5px black;
+}
+
+.vis-active .vis-group {
+  box-shadow: 0 0 10px #86d5f8;
 }
 
 /**

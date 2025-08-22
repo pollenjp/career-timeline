@@ -12,7 +12,7 @@ function App() {
         {/* timeline領域をクリックしてフォーカスモードに入ることで操作できるようになります */}
         <ul>
           <li><strong>ボタン操作</strong>: 画面右下のボタンからズームと移動ができます</li>
-          <li><strong>マウスモード</strong>: timeline 上で一度クリックするとマウスモードに有効になります
+          <li><strong>マウスモード</strong>: timeline 上で一度クリックするとマウスモードに有効になります (<code>ESC</code>で解除)
             <ul>
               <li>左側のラベルをクリック → <strong>折りたたみ</strong></li>
               <li>timeline 上にマウスポインターがある状態で <code>Scroll</code> → <strong>水平スクロール</strong></li>
