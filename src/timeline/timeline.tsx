@@ -1226,6 +1226,28 @@ const VisTimeline: React.FC = () => {
     items.add(
       (
         () => {
+          const startMoment = moment("2021-04-01");
+          const endMoment = moment();
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <a href="https://scrapbox.io/pollenJP-Portfolio/自宅インフラ" target="_blank">自宅インフラ</a>
+                <img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,cloudflare" />
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "range",
+              // className: boxColorClassAllocator(),
+            }
+          ]
+        }
+      )()
+    );
+    items.add(
+      (
+        () => {
           const startMoment = moment("2022-02-01");
           const endMoment = moment("2022-03-01");
           return [
