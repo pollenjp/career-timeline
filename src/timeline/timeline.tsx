@@ -1406,6 +1406,30 @@ const VisTimeline: React.FC = () => {
         }
       )()
     );
+    items.add(
+      (
+        () => {
+          const startMoment = moment("2025-09-23");
+          const endMoment = moment();
+          return [
+            {
+              id: idGenerator(),
+              group: g_computer_science.id,
+              content: `
+                <img src="https://i.gyazo.com/b6a3410b6b78b9966021180a632c1eb3.png" alt="Image from Gyazo"/>
+                <a href="https://www.oreilly.co.jp/books/9784814400560/" target="_blank">『入門 eBPF』</a>
+                <img src="https://i.gyazo.com/6f43c3992d9d29001bc7578341d8fb8a.png" alt="ebpf logo"/>
+                (進行形)
+              `,
+              start: startMoment.toDate(),
+              end: endMoment.toDate(),
+              type: "range",
+              // className: boxColorClassAllocator(),
+            }
+          ]
+        }
+      )()
+    );
   }
 
   /**
