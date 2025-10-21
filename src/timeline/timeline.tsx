@@ -1208,7 +1208,7 @@ const VisTimeline: React.FC = () => {
           return [
             {
               id: idGenerator(),
-              group: g_computer_science.id,
+              group: g_data_science.id,
               content: `
                 <img src="https://i.gyazo.com/bea028e6ad037240df848e1e4cbc7c4e.png" alt="Image from Gyazo"/>
                 <a href="https://book.mynavi.jp/ec/products/detail/id=104855" target="_blank">『つくりながら学ぶ!PyTorchによる発展ディープラーニング』</a>

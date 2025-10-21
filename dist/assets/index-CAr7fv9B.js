@@ -380,7 +380,7 @@ G.version="2.30.1";DW(mt);G.fn=ne;G.min=pX;G.max=vX;G.now=mX;G.utc=cn;G.unix=BQ;
                 <img src="https://i.gyazo.com/fbf7c8fc4c6b912d69af342e922732e2.png" alt="Image from Gyazo"/>
                 <a href="https://book.impress.co.jp/books/1116101172" target="_blank">『TensorFlow機械学習クックブック』Pythonベースの活用レシピ60+</a>
                 <img src="https://skillicons.dev/icons?i=tensorflow,sklearn,python" />
-              `,start:T.toDate(),end:R.toDate(),type:"box",className:Le()}]})()),l.add((()=>{const T=G("2021-04-01"),R=G("2021-07-31");return[{id:le(),group:m.id,content:`
+              `,start:T.toDate(),end:R.toDate(),type:"box",className:Le()}]})()),l.add((()=>{const T=G("2021-04-01"),R=G("2021-07-31");return[{id:le(),group:y.id,content:`
                 <img src="https://i.gyazo.com/bea028e6ad037240df848e1e4cbc7c4e.png" alt="Image from Gyazo"/>
                 <a href="https://book.mynavi.jp/ec/products/detail/id=104855" target="_blank">『つくりながら学ぶ!PyTorchによる発展ディープラーニング』</a>
                 <img src="https://skillicons.dev/icons?i=pytorch,python" />
