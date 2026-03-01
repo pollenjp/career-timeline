@@ -389,6 +389,42 @@ const VisTimeline: React.FC = () => {
       items.add(
         (
           () => {
+            const gid = g_organization.id;
+            const startMoment = moment("2026-01-01");
+            const endMoment = moment();
+            return [
+              {
+                id: idGenerator(),
+                content: ``,
+                start: startMoment.toDate(),
+                end: endMoment.toDate(),
+                type: "background",
+                className: bgColorClassAllocator(),
+              },
+              {
+                id: idGenerator(),
+                group: gid,
+                content: `
+                  <div>
+                    <a href="https://3-shake.com/" target="_blank">
+                      株式会社スリーシェイク (SRE)
+                    </a>
+                    <br />
+                    <img src="https://skillicons.dev/icons?i=kubernetes,aws,gcp,terraform,docker,go,python" />
+                    (${startMoment.format('YYYY-MM-DD')} ～ ${endMoment.format('YYYY-MM-DD')} 現在)
+                  </div>
+                `,
+                start: startMoment.toDate(),
+                end: endMoment.toDate(),
+                type: "range",
+              },
+            ]
+          }
+        )(),
+      );
+      items.add(
+        (
+          () => {
             const startMoment = moment("2024-02-01");
             const endMoment = moment("2024-09-30");
             return [
